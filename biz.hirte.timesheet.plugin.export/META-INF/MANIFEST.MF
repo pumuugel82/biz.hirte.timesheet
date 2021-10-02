@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Timesheet Exporter Etengo
+Bundle-SymbolicName: biz.hirte.timesheet.plugin.export;singleton:=true
+Bundle-Version: 1.0.1.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8,
+ JavaSE-1.6,
+ JavaSE-1.7
+Require-Bundle: biz.hirte.timesheet.plugin.provider.api;bundle-version="1.0.1"
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: lib/poi-3.13-20150929.jar,
+ lib/poi-ooxml-3.13-20150929.jar,
+ lib/poi-ooxml-schemas-3.13-20150929.jar,
+ lib/xmlbeans-2.6.0.jar,
+ .
+Bundle-Vendor: www.hirte.biz

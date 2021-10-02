@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Timesheet XML Provider
+Bundle-SymbolicName: biz.hirte.timesheet.plugin.provider.xmlstore;singleton:=true
+Bundle-Version: 1.0.1.qualifier
+Bundle-Vendor: hirte.biz
+Bundle-Activator: biz.hirte.timesheet.provider.xml.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8,
+ JavaSE-1.6,
+ JavaSE-1.7
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.ui,
+ biz.hirte.timesheet.plugin.provider.api;bundle-version="1.0.1"
+Bundle-ActivationPolicy: lazy

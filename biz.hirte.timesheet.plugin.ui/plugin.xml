@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension-point id="exporter" name="timesheets exporter" schema="schema/exporter.exsd"/>
+   <extension-point id="provider" name="timesheet provider" schema="schema/provider.exsd"/>
+
+   <extension
+         id="Timesheet.fragment"
+         point="org.eclipse.e4.workbench.model">
+      <fragment
+            uri="fragment.e4xmi">
+      </fragment>
+   </extension>
+
+</plugin>

@@ -1,0 +1,112 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>biz.hirte.timesheet.parent</artifactId>
+	<groupId>biz.hirte.timesheet</groupId>
+	<version>1.0.1-SNAPSHOT</version>
+
+	<packaging>pom</packaging>
+
+	<properties>
+		<tycho-version>0.24.0</tycho-version>
+	</properties>
+
+	<profiles>
+
+		<profile>
+			<id>neon</id>
+			<activation>
+		        <activeByDefault>true</activeByDefault>
+		    </activation>
+			<repositories>
+				<repository>
+					<!-- Eclipse 4.6 -->
+					<id>eclipse-neon</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/releases/neon</url>
+				</repository>
+			</repositories>
+			<properties>
+				<ftp.toDir>/eclipse/updatesite/neon</ftp.toDir>
+			</properties>
+		</profile>
+
+		<profile>
+			<id>mars</id>
+			<repositories>
+				<repository>
+					<!-- Eclipse 4.5 -->
+					<id>eclipse-mars</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/releases/mars</url>
+				</repository>
+			</repositories>
+			<properties>
+				<ftp.toDir>/eclipse/updatesite/mars</ftp.toDir>
+			</properties>
+		</profile>
+
+		<profile>
+			<id>luna</id>
+			<repositories>
+				<repository>
+					<!-- Eclipse 4.4 -->
+					<id>eclipse-luna</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/releases/luna</url>
+				</repository>
+			</repositories>
+			<properties>
+				<ftp.toDir>/eclipse/updatesite/luna</ftp.toDir>
+			</properties>
+		</profile>
+
+		<profile>
+			<id>kepler</id>
+			<repositories>
+				<repository>
+					<!-- Eclipse 4.3 -->
+					<id>eclipse-kepler</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/releases/kepler</url>
+				</repository>
+			</repositories>
+			<properties>
+				<ftp.toDir>/eclipse/updatesite/kepler</ftp.toDir>
+			</properties>
+		</profile>
+
+	</profiles>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>target-platform-configuration</artifactId>
+					<version>${tycho-version}</version>
+					<configuration>
+						<environments>
+							<environment>
+								<os>win32</os>
+								<ws>win32</ws>
+								<arch>x86_64</arch>
+							</environment>
+						</environments>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+	<!-- <modules> <module> ../../../../../dev/repo/timesheetexporter/TimesheetExporter 
+		</module> <module> ../../biz.hirte.timesheet.feature/biz.hirte.timesheet.feature 
+		</module> <module>../../../../../dev/repo/timesheet/Timesheet</module> <module>../../timesheetproviderxml/TimesheetProviderXML</module> 
+		</modules> -->
+	<modules>
+		<module>biz.hirte.timesheet.plugin.export</module>
+		<module>biz.hirte.timesheet.plugin.ui</module>
+		<module>biz.hirte.timesheet.plugin.provider.api</module>
+		<module>biz.hirte.timesheet.plugin.provider.xmlstore</module>
+	</modules>
+</project>

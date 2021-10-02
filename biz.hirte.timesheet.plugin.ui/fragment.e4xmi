@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_-J5voLroEeWEALMB6rvOIA">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_-_IugLroEeWEALMB6rvOIA" featurename="trimContributions" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="menu:TrimContribution" xmi:id="_zZZvkLrqEeWEALMB6rvOIA" elementId="timesheet.trimcontribution.0" parentId="org.eclipse.ui.main.toolbar" positionInParent="after=additions">
+      <children xsi:type="menu:ToolBar" xmi:id="_1lt2ILrqEeWEALMB6rvOIA" elementId="timesheet.toolbar.0">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_L_uP8LrpEeWEALMB6rvOIA" elementId="timesheet.handledtoolitem.test" label="Add Period" iconURI="platform:/plugin/biz.hirte.timesheet.gui/icon/timeschedule.png" command="_ryZ-cLrpEeWEALMB6rvOIA"/>
+      </children>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_iWrD0LrpEeWEALMB6rvOIA" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_ryZ-cLrpEeWEALMB6rvOIA" elementId="biz.hirte.timesheet.command.changePeriod" commandName="Change Period" description="Will add or change a period to the timesheet"/>
+    <elements xsi:type="commands:Command" xmi:id="_OPinoOPUEeWjYrqeOFpnDw" elementId="biz.hirte.timesheet.command.changeProject" commandName="Change Project" description="Will add or change a project to the timesheet"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_xhPJgLrpEeWEALMB6rvOIA" featurename="handlers" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Handler" xmi:id="_5LDakLrpEeWEALMB6rvOIA" elementId="biz.hirte.timesheet.handler.changePeriod" contributionURI="bundleclass://biz.hirte.timesheet.gui/biz.hirte.timesheet.handler.ChangePeriodHandler" command="_ryZ-cLrpEeWEALMB6rvOIA"/>
+    <elements xsi:type="commands:Handler" xmi:id="_Tq3n4OPUEeWjYrqeOFpnDw" elementId="biz.hirte.timesheet.handler.changeProject" contributionURI="bundleclass://biz.hirte.timesheet.gui/biz.hirte.timesheet.handler.ChangeProjectHandler" command="_OPinoOPUEeWjYrqeOFpnDw"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_mXSv4LsFEeW5cY7j3SHWOg" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_mwmLMLvKEeWoi5yOs1VRZA" elementId="timesheet.partdescriptor.timesheets" label="Timesheets" iconURI="platform:/plugin/biz.hirte.timesheet.gui/icon/Timetable.png" category="Timesheets" closeable="true" contributionURI="bundleclass://biz.hirte.timesheet.gui/biz.hirte.timesheet.view.TimesheetView">
+      <tags>View</tags>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>

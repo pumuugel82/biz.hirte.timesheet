@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="biz.hirte.timesheet.feature"
+      label="Timesheet tracking functions"
+      version="1.0.1.qualifier"
+      provider-name="www.hirte.biz"
+      os="win32"
+      ws="win32"
+      arch="x86,x86_64">
+
+   <description>
+      This feature consists of plugins for tracking, reviewing and
+exporting timetables.
+   </description>
+
+   <copyright>
+      All copy rights are held by Christoph Hirte.
+   </copyright>
+
+   <license url="">
+      You are fee to use these feature/plugins for private purposes.
+The software comes without any guarentees.
+
+DSICLAIMER
+Before you use the software you should have a look at source code in order to see what it will do.
+   </license>
+
+   <requires>
+      <import plugin="biz.hirte.timesheet.gui" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.e4.ui.model.workbench"/>
+      <import plugin="org.eclipse.e4.ui.di"/>
+      <import plugin="org.eclipse.e4.core.services"/>
+      <import plugin="org.eclipse.osgi.services"/>
+      <import plugin="org.eclipse.e4.core.di"/>
+      <import plugin="org.eclipse.e4.core.contexts"/>
+      <import plugin="org.eclipse.core.databinding"/>
+      <import plugin="org.eclipse.core.databinding.beans"/>
+      <import plugin="org.eclipse.core.databinding.observable"/>
+      <import plugin="org.eclipse.core.databinding.property"/>
+      <import plugin="org.eclipse.jface.databinding"/>
+      <import plugin="com.ibm.icu"/>
+   </requires>
+
+   <plugin
+         id="biz.hirte.timesheet.provider.xmlstore"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="biz.hirte.timesheet.gui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="biz.hirte.swt.controls"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="biz.hirte.timesheet.exporter.etengo"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="biz.hirte.timesheet.provider.api"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

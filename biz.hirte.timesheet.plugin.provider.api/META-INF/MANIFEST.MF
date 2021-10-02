@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Provider API
+Bundle-SymbolicName: biz.hirte.timesheet.plugin.provider.api;singleton:=true
+Bundle-Version: 1.0.1.qualifier
+Bundle-Vendor: hirte.biz
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8,
+ JavaSE-1.6,
+ JavaSE-1.7
+Export-Package: biz.hirte.timesheet.export,
+ biz.hirte.timesheet.model,
+ biz.hirte.timesheet.service

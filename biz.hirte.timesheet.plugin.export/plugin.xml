@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="biz.hirte.timesheet.gui.exporter">
+      <exporter
+            clazz="biz.hirte.timesheet.exporter.GebitASSCO"
+            description="Exportiert Zeiten fuer Vermittler"
+            displayName="Solcom/Gebit">
+      </exporter>
+      <exporter
+            clazz="biz.hirte.timesheet.exporter.EtengoDZBank"
+            description="Will export the times in Etengo/DZBank format."
+            displayName="Etengo/DZBank">
+      </exporter>
+      <exporter
+            clazz="biz.hirte.timesheet.exporter.BundesbankSHSDB4"
+            description="Exportiert Zeiten im SHSDB4-Template"
+            displayName="PASS/Bundesbank SHSDB4">
+      </exporter>
+   </extension>
+</plugin>
