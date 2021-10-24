@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <units size='1'>
-  <unit id='biz.hirte.timesheet.plugin.provider.api' version='1.0.1.202110022235'>
-    <update id='biz.hirte.timesheet.plugin.provider.api' range='[0.0.0,1.0.1.202110022235)' severity='0'/>
+  <unit id='biz.hirte.timesheet.plugin.provider.api' version='1.0.1.202110031222' generation='2'>
+    <update id='biz.hirte.timesheet.plugin.provider.api' range='[0.0.0,1.0.1.202110031222)' severity='0'/>
     <properties size='5'>
       <property name='org.eclipse.equinox.p2.name' value='Provider API'/>
       <property name='org.eclipse.equinox.p2.provider' value='hirte.biz'/>
@@ -9,22 +9,34 @@
       <property name='maven-artifactId' value='biz.hirte.timesheet.plugin.provider.api'/>
       <property name='maven-version' value='1.0.1-SNAPSHOT'/>
     </properties>
-    <provides size='6'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='biz.hirte.timesheet.plugin.provider.api' version='1.0.1.202110022235'/>
-      <provided namespace='osgi.bundle' name='biz.hirte.timesheet.plugin.provider.api' version='1.0.1.202110022235'/>
+    <provides size='7'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='biz.hirte.timesheet.plugin.provider.api' version='1.0.1.202110031222'/>
+      <provided namespace='osgi.bundle' name='biz.hirte.timesheet.plugin.provider.api' version='1.0.1.202110031222'/>
       <provided namespace='java.package' name='biz.hirte.timesheet.export' version='0.0.0'/>
       <provided namespace='java.package' name='biz.hirte.timesheet.model' version='0.0.0'/>
       <provided namespace='java.package' name='biz.hirte.timesheet.service' version='0.0.0'/>
+      <provided namespace='osgi.identity' name='biz.hirte.timesheet.plugin.provider.api' version='1.0.1.202110031222'>
+        <properties size='1'>
+          <property name='type' value='osgi.bundle'/>
+        </properties>
+      </provided>
       <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
     </provides>
+    <requires size='1'>
+      <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(|(version=1.6)(version=1.7)(version=1.8)))'>
+        <description>
+          biz.hirte.timesheet.plugin.provider.api
+        </description>
+      </requiredProperties>
+    </requires>
     <artifacts size='1'>
-      <artifact classifier='osgi.bundle' id='biz.hirte.timesheet.plugin.provider.api' version='1.0.1.202110022235'/>
+      <artifact classifier='osgi.bundle' id='biz.hirte.timesheet.plugin.provider.api' version='1.0.1.202110031222'/>
     </artifacts>
     <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
     <touchpointData size='1'>
       <instructions size='1'>
         <instruction key='manifest'>
-          Bundle-SymbolicName: biz.hirte.timesheet.plugin.provider.api;singleton:=true&#xA;Bundle-Version: 1.0.1.202110022235&#xA;
+          Bundle-SymbolicName: biz.hirte.timesheet.plugin.provider.api;singleton:=true&#xA;Bundle-Version: 1.0.1.202110031222&#xA;
         </instruction>
       </instructions>
     </touchpointData>
