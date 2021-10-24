@@ -9,7 +9,7 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<tycho-version>0.24.0</tycho-version>
+		<tycho-version>2.5.0</tycho-version>
 	</properties>
 
 	<profiles>
@@ -88,6 +88,11 @@
 					<version>${tycho-version}</version>
 					<configuration>
 						<environments>
+							<environment>
+								<os>win32</os>
+								<ws>win32</ws>
+								<arch>x86_64</arch>
+							</environment>
 							<environment>
 								<os>win32</os>
 								<ws>win32</ws>

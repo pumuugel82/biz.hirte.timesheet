@@ -2,7 +2,7 @@
 <?eclipse version="3.4"?>
 <plugin>
    <extension
-         point="biz.hirte.timesheet.gui.exporter">
+         point="biz.hirte.timesheet.plugin.ui.exporter">
       <exporter
             clazz="biz.hirte.timesheet.exporter.GebitASSCO"
             description="Exportiert Zeiten fuer Vermittler"

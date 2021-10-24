@@ -2,7 +2,7 @@
 <?eclipse version="3.4"?>
 <plugin>
    <extension
-         point="biz.hirte.timesheet.gui.provider">
+         point="biz.hirte.timesheet.plugin.ui.provider">
       <provider
             clazz="biz.hirte.timesheet.provider.xml.service.TimesheetServiceImpl"
             displayName="XML Provider">
